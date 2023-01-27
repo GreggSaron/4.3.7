@@ -1,0 +1,105 @@
+html {
+    width: 100%;;
+    height: 100%;
+}
+
+body {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    background-color: #FF97BB;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    width: 80%;
+    border-radius: 20px;
+    border-width: 7px;
+    border-color: blueviolet;
+    background-color: #afeeee;
+    padding: 5px;
+    margin-top: 70px;
+    transition: all 0.6s ease;
+}
+
+.input:focus {
+    border: 7px solid #FF97BB;
+    background-color: #ffffff;
+    outline: none; 
+}
+
+.optionsList {
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-top: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.optionsList_option {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 98%;
+    height: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.optionsList_option:hover {
+    background-color: rgb(102, 176, 219);
+}
+
+.cardsContainer {
+    border-radius: 15px;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-bottom: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+.removeBtn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 97%;
+    background-color: rgb(236, 26, 26);
+    border: none;
+    transition: all 0.6s ease;
+}
+
+.removeBtn:hover {
+    background-color: #ffffff;
+    border: 3px solid blueviolet;
+}
+
+.cardsContainer_card {
+    font-size: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 3px solid blueviolet;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-right: 0;
+    margin-left: 50px;
+}
+
+.title {
+    color: #ffffff;
+    margin-left: 35%;
+}
