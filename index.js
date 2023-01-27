@@ -61,7 +61,6 @@ function searching () {
     fetch(`https://api.github.com/search/repositories?q=${searchingValue}`)
         .then((response) => response.json())
         .then((data) => {
-            console.log(data)
             for(let i = 0; i < 5; i++){
                 let cur = createLi(data.items[i].name);
                 cur.addEventListener('click', createCard.bind(this, data.items[i].name, data.items[i].owner.login, data.items[i].stargazers_count));
